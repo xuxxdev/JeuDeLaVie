@@ -2,7 +2,7 @@
 #define __POPUlATION_H
 
 #include "Cellule.h"
-#define N 4
+#define N 9
 
 class Population{
 	private :
@@ -12,7 +12,7 @@ class Population{
 		size_t nb_cellule(Cellule::color color) const;
 
 		//Calcul nombre de cellules vivantes voisines
-		size_t nbCellVivanteVoisine(size_t i, size_t j) const;
+		size_t nbCellVivanteVoisine(size_t ci, size_t cj) const;
 
 		//Gérer les cellules qui vont mourir
 		void colorUpdate() ;
@@ -35,6 +35,13 @@ class Population{
 		size_t numCellMorte() const;
 		size_t numCellNaitre() const;
 		size_t numCellVaMourir() const;
+		
+		//Accesseur en modification
+		void tuer(size_t i, size_t j);
+		void naitre(size_t i, size_t j);
+
+		//Print
+		void print() const;
 
 		//Population suivante
 		Population next() const;

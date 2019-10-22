@@ -1,0 +1,8 @@
+#Fichier de configuration
+
+Dimension : 8           #Definition de la dimenstion
+Probability : 0.6       #Definition de la probabilité
+Cell : 4,4              #Naissance de la cellule en position (4,8)
+
+
+Probability : 0.75      #Definition de la probabilité ²

@@ -26,12 +26,12 @@ class Cellule {
 		unsigned int getX() const;
 		unsigned int getY() const;
 		color getColor() const;
-
+		
 		//Ecriture
 		void setVivante(bool etat);
 		void setX(unsigned int x);
 		void setY(unsigned int y);
-		
+
 		//Color Cell
 		bool isCellColor(const Cellule & cell2,color couleur) const;
 
@@ -40,11 +40,10 @@ class Cellule {
 
 		//Affichage cell
 		void printCell() const;
-
-		//Retour string de la couleur
-		std::string couleur2string(color couleur) const;
-
 };
+
+//signature
+std::string couleur2string(Cellule::color couleur); 
 
 #endif
 
